@@ -62,6 +62,8 @@
       },
       {
         "pagePath": "pages/answer/answer-home/answer-home",
+
+        
         "text": " 答题",
         "iconPath": "/static/image/answer.png",
         "selectedIconPath": "/static/image/answer_action.png"
