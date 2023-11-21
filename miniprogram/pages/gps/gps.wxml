@@ -1,3 +1,4 @@
+<!-- 站点定位 -->
 <view class="gbs">
   <!--顶部基本信息-->
   <view class="zan-panel" wx:if="{{size > 0}}">

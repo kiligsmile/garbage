@@ -15,7 +15,7 @@
   </button>
 </view>
 
-<view wx:else>
+<!-- <view wx:else>
   <view>
     <view class="logo">
       <text class="settings cuIcon-settings" bindtap="openAuthorizationModal"></text>
@@ -84,7 +84,7 @@
       </view>
     </view>
   </view>
-</view>
+</view> -->
 
-
-<settings id="initModal" bind:close="closeSettings" bind:updated="updatedUserInfoEvent" show="{{showSettings}}"></settings>
+<!-- 
+<settings id="initModal" bind:close="closeSettings" bind:updated="updatedUserInfoEvent" show="{{showSettings}}"></settings> -->

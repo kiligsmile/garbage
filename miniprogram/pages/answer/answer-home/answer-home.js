@@ -21,7 +21,10 @@ Page({
         showCancel: false,
         success: (res) => {
           if (res.confirm) {
-            app.$util.switchTabTo("/pages/user/user")
+            // app.$util.switchTabTo("/pages/user/user")
+            wx.navigateTo({
+              url: '/pages/user/user'
+            })
           }
         }
       })

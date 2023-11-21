@@ -28,11 +28,12 @@
     "pages/adminGoods/goodsList/goodsList",
     "pages/adminFeedback/feedbackList/feedbackList",
     "pages/answer/answer-ranking/answer-ranking",
+    "pages/answer/answer-count/answer-count",
     "pages/answer/answer-history/answer-history",
     "pages/myIntegral/myIntegral",
     "pages/shareList/shareList",
     "pages/settings/settings",
-    "pages/news/news"
+    "pages/protect/protect"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -62,17 +63,9 @@
       },
       {
         "pagePath": "pages/answer/answer-home/answer-home",
-
-        
         "text": " 答题",
         "iconPath": "/static/image/answer.png",
         "selectedIconPath": "/static/image/answer_action.png"
-      },
-      {
-        "pagePath": "pages/user/user",
-        "text": " 用户",
-        "iconPath": "/static/image/user.png",
-        "selectedIconPath": "/static/image/user_action.png"
       }
     ]
   },

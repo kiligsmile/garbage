@@ -1,0 +1,68 @@
+<view class="myIntegral">
+  <view class="header">
+    <view class="info">我的积分</view>
+    <view class="num">{{userInfo.integral}}</view>
+  </view>
+  <view class="body">
+    <view class="cu-list menu sm-border card-menu margin-top">
+      <view class="cu-item">
+        <view class="content body-title">
+          <text class="vertical-line"></text>
+          <!-- <text class="text-grey title">每答对一道题，可获得10积分</text> -->
+          <text class="text-grey title">积分规则：</text>
+        </view>
+      </view>
+      <view class="cu-item m-item">
+        <view class="content m-content">
+          <image class="favorite-img" src="/static/image/zhengque.png"></image>
+          <!-- <text class="cuIcon-roundcheck lg  m-icon"></text> -->
+          <text class="text-grey m-text">答对一题</text>
+        </view>
+        <view class="action m-action">
+          <!-- <text class="m-action-text">+{{allAddIntegral}}</text>
+           -->
+           <text class="m-action-text">+10</text>
+        </view>
+      </view>
+      <view class="cu-item m-item">
+        <view class="content m-content">
+          <!-- <text class="cuIcon-share lg  m-icon"></text> -->
+          <image class="favorite-img" src="/static/image/cuowu.png"></image>
+          <text class="text-grey m-text">答错一题</text>
+        </view>
+        <view class="action m-action">
+          <text class="m-action-text">+0</text>
+        </view>
+      </view>
+      <view class="cu-item m-item" bindtap="shareListHandle">
+        <view class="content m-content">
+          <!-- <text class="cuIcon-friendadd lg  m-icon"></text> -->
+          <image class="favorite-img" src="/static/image/sousuo.png"></image>
+          <text class="text-grey m-text">搜索垃圾</text>
+        </view>
+        <view class="action m-action">
+          <text class="m-action-text">-5</text>
+        </view>
+      </view>
+    </view>
+    <!-- <view class="cu-list menu sm-border card-menu margin-top">
+      <view class="cu-item">
+        <view class="content body-title">
+          <text class="vertical-line"></text>
+          <text class="text-grey title">增值服务</text>
+        </view>
+      </view>
+      <view class="cu-item m-item">
+        <view class="content m-content">
+          <text class="cuIcon-shop lg m-icon"></text>
+          <text class="text-grey m-text">积分商城</text>
+        </view>
+        <view class="action m-action" bindtap="goShop">
+          <button class="cu-btn round shadow m-button">
+            前往
+          </button>
+        </view>
+      </view>
+    </view> -->
+  </view>
+</view>

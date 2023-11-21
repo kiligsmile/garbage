@@ -1,0 +1,26 @@
+.article{
+  padding: 30rpx;
+  background-color: rgb(245, 245, 245);
+}
+
+.title{
+  margin: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+  font-weight: bolder;
+}
+
+.content {
+  font-size: 30rpx;
+  font-family: "sans-serif";
+}
+
+.article-image{
+  float: right;
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 50%;
+  overflow:hidden;
+}

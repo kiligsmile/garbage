@@ -12,8 +12,8 @@ Component({
         login: true
       },
       {
-        title: '分类资讯',
-        name: 'news',
+        title: '环境保护',
+        name: 'protect',
         color: 'olive',
         icon: 'album',
         login: true

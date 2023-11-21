@@ -3,10 +3,10 @@ let app = getApp()
 Page({
   data: {
     isLogin: app.globalData.isLogin,
-    list: [{
-      src: "/static/image/cclj.png",
-      type: "cclj"
-    }, {
+    // isLogin: false,
+    userIndex: -1,
+    userInfo: {},
+    list: [ {
       src: "/static/image/cylj.png",
       type: "cylj"
     }, {
@@ -30,6 +30,32 @@ Page({
     }
   },
   onLoad(options) {
+    if (app.globalData.isLogin) {
+      this.setData({
+        isLogin: true
+      })
+      this.setData({
+        userInfo: app.globalData.userInfo,
+      })
+      // this.getRanking()
+    } else {
+      wx.showModal({
+        title: '提示',
+        content: '还未登录，请先登录！',
+        showCancel: false,
+        success: (res) => {
+          if (res.confirm) {
+            // app.$util.switchTabTo("/pages/user/user")
+            wx.navigateTo({
+              url: '/pages/user/user'
+            })
+          }
+        }
+      })
+      this.setData({
+        isLogin: false
+      })
+    }
     let shareOption = wx.getLaunchOptionsSync()
     if (shareOption.scene === 1001 || shareOption.scene === 1007) {
       let {
